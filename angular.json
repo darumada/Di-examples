@@ -24,7 +24,12 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@b-ui/icon/sprites/",
+                "output": "./assets/sprites"
+              }
             ],
             "styles": [
               "src/styles.css"

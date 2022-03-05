@@ -1,0 +1,24 @@
+<form [formGroup]="form">
+  <div style="margin-top: 20px">
+    <b-ui-control-wrapper label="Имя">
+      <b-ui-input-text [placeholder]="'Имя'" formControlName="name" [errorMessages]="nameErrorMessages">
+
+      </b-ui-input-text>
+    </b-ui-control-wrapper>
+  </div>
+  <div style="margin-top: 20px">
+    <b-ui-control-wrapper label="Option">
+      <b-ui-select formControlName="option" [options]="options" [bindValue]="'value'" [bindLabel]="'label'">
+
+      </b-ui-select>
+    </b-ui-control-wrapper>
+  </div>
+  <div style="margin-top: 20px">
+    <b-ui-control-wrapper label="Дата">
+      <b-ui-datepicker formControlName="date">
+
+      </b-ui-datepicker>
+    </b-ui-control-wrapper>
+  </div>
+</form>
+

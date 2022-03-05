@@ -1,0 +1,13 @@
+<ng-container *ngIf="modal.isOpen; else openBtn">
+  Мы внутри модалки
+
+  <button (click)="modal.close()">Закрыть</button>
+</ng-container>
+
+
+
+<ng-template #openBtn>
+  <button (click)="modal.open()">Открыть</button>
+</ng-template>
+
+
